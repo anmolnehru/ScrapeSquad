@@ -1,0 +1,54 @@
+{
+  "name": "linked job reader",
+  "description": "A job post reader for linkedin",
+  "json_schema": {
+    "title": "LinkedInJobPostExtractor",
+    "description": "Extracts information from LinkedIn job posts.",
+    "type": "object",
+    "properties": {
+      "jobTitle": {
+        "type": "string",
+        "description": "The title of the job."
+      },
+      "companyName": {
+        "type": "string",
+        "description": "The name of the company posting the job."
+      },
+      "location": {
+        "type": "string",
+        "description": "The job location."
+      },
+      "datePosted": {
+        "type": "string",
+        "description": "The date when the job was posted."
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the job."
+      },
+      "employmentType": {
+        "type": "string",
+        "description": "The type of employment (e.g., Full-time, Part-time, Contract)."
+      },
+      "industry": {
+        "type": "string",
+        "description": "The industry the job belongs to."
+      },
+      "experienceLevel": {
+        "type": "string",
+        "description": "The level of experience required for the job (e.g., Entry level, Associate, Mid-Senior level, Director)."
+      }
+    },
+    "required": [
+      "jobTitle",
+      "companyName",
+      "location",
+      "datePosted"
+    ]
+  },
+  "instruction": "string",
+  "extractor_examples": [],
+  "id": "78428e10-5cb0-4cc3-ba08-8711f0d16a8a",
+  "created_at": "2024-05-05T20:10:33.001107",
+  "updated_at": "2024-05-05T20:10:33.001107"
+}
