@@ -1,0 +1,75 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+asyncpg = "*"
+fastapi-users = {extras = ["sqlalchemy"] }
+httpx = "*"
+selenium = "*"
+openai = "*"
+tiktoken = "*"
+beautifulsoup4 = "*"
+aiofiles = "*"
+webdriver-manager = "*"
+bcrypt = "*"
+dnspython = "*"
+email-validator = "*"
+passlib = "*"
+pyjwt = "*"
+python-dotenv = "*"
+toml = "*"
+sqlalchemy = "*"
+pydantic-settings = "*"
+pydantic = {extras = ["email"] }
+install = "*"
+types-beautifulsoup4 = "*"
+pypdf2 = "*"
+playwright = "*"
+llama-index = "*"
+langchain = "*"
+transformers = "*"
+accelerate = "*"
+llama-index-llms-openai = "*"
+jsonpath-ng = "*"
+langchain-openai = "*"
+playwright-stealth = "*"
+rich = "*"
+jsonschema = "*"
+langchain-community = "*"
+typing-extensions = "*"
+faiss-cpu = "*"
+requests = "*"
+starlette-admin = "*"
+python-magic = "*"
+lxml = "*"
+pymilvus = "*"
+octoai-sdk = "*"
+
+[dev-packages]
+ipython = "*"
+mypy = "*"
+install = "*"
+types-aiofiles = "*"
+types-toml = "*"
+jupyter = "*"
+types-requests = "*"
+typer = "*"
+
+[scripts]
+test = "docker-compose exec web python -m pytest"
+testv = "docker-compose exec web python -m pytest -vv"
+psql = 'docker-compose exec db psql -U "$DEFAULT_DATABASE_USER" -d "$DEFAULT_DATABASE_DB"'
+build = "docker-compose exec web python setup.py sdist bdist_wheel"
+build-docs = "docker-compose exec web sphinx-build -b html docs ../docs"
+host-docs = "docker-compose exec web python -m http.server --directory ../docs"
+api = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8004"
+
+[requires]
+python_version = "3.11"
+
+[pipenv]
+allow_prereleases = true

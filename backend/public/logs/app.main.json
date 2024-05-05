@@ -1,0 +1,2 @@
+{"levelname": "INFO", "message": "Request: http://127.0.0.1:8004/docs completed in 4.499912261962891ms, status code: 200", "asctime": "2024-05-05 11:14:25,109", "process_id": "10111", "thread_id": "4347102592"}
+{"levelname": "INFO", "message": "Request: http://127.0.0.1:8004/openapi.json completed in 224.64585304260254ms, status code: 200", "asctime": "2024-05-05 11:14:25,471", "process_id": "10111", "thread_id": "4347102592"}
