@@ -62,8 +62,8 @@ class Settings(_BaseSettings):
     DEFAULT_SQLALCHEMY_DATABASE_URI: str = ""
 
     # FIRST SUPERUSER
-    FIRST_SUPERUSER_EMAIL: EmailStr
-    FIRST_SUPERUSER_PASSWORD: str
+    FIRST_SUPERUSER_EMAIL:EmailStr = "anmol@gmail.com"
+    FIRST_SUPERUSER_PASSWORD:str = "password"
 
     # VALIDATORS
     @validator("BACKEND_CORS_ORIGINS")
