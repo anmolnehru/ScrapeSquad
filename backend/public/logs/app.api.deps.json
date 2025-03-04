@@ -1,0 +1,3 @@
+{"levelname": "INFO", "message": "get_extractor: <Extractor(id=78428e10-5cb0-4cc3-ba08-8711f0d16a8a, description=A job post reader for linkedin)>", "asctime": "2024-05-05 20:11:45,952", "process_id": "8", "thread_id": "281473890221376"}
+{"levelname": "INFO", "message": "Running extractor linked job reader with payload mode='entire_document' file=None text=None url=Url('https://www.linkedin.com/jobs/search/?currentJobId=3909728094') llm=None", "asctime": "2024-05-05 20:11:45,956", "process_id": "8", "thread_id": "281473890221376"}
+{"levelname": "WARNING", "message": "Object with linked job reader not found", "asctime": "2024-05-05 20:11:45,964", "process_id": "8", "thread_id": "281473890221376"}
